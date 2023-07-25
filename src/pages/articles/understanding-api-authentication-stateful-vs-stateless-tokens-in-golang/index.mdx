@@ -1,6 +1,6 @@
 import { ArticleLayout } from '@/components/ArticleLayout'
 import Image from 'next/image'
-// import gopher from './gopher.png'
+import gopher from './gopher.png'
 
 export const meta = {
   author: 'Adam Wathan',
@@ -15,7 +15,7 @@ export default (props) => <ArticleLayout meta={meta} {...props} />
 
 API authentication is a crucial aspect of web development, ensuring that only authorized users can access protected resources and perform actions on an application's API.
 
-{/* <Image src={gopher} alt="" /> */}
+<Image src={gopher} alt="" />
 
 Two common approaches to API authentication are stateful and stateless token-based methods. In this article, we explore the key differences between these two methods and how they can be implemented in Golang.
 
