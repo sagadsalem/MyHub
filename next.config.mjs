@@ -2,13 +2,13 @@ import rehypePrism from '@mapbox/rehype-prism'
 import nextMDX from '@next/mdx'
 import remarkGfm from 'remark-gfm'
 
-const debug = process.env.NODE_ENV !== 'production'
+const appEnv = process.env.APP_ENV === 'local'
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  basePath: '/MyHub',
-  assetPrefix: 'https://sagadsalem.github.io/MyHub/',
+  basePath: appEnv ? '' : '/MyHub',
+  assetPrefix: appEnv ? '' : 'https://sagadsalem.github.io/MyHub',
   images: { unoptimized: true },
   pageExtensions: ['js', 'jsx', 'mdx'],
   reactStrictMode: true,
