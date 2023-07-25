@@ -7,6 +7,7 @@ const debug = process.env.NODE_ENV !== 'production'
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
+  basePath: '/MyHub',
   assetPrefix: 'https://sagadsalem.github.io/MyHub/',
   images: { unoptimized: true },
   pageExtensions: ['js', 'jsx', 'mdx'],
