@@ -3,21 +3,15 @@ import nextMDX from '@next/mdx'
 import remarkGfm from 'remark-gfm'
 
 const debug = process.env.NODE_ENV !== 'production'
-console.log('debug', debug)
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  assetPrefix: !debug ? 'https://sagadsalem.github.io/MyHub/' : '',
-  images: {
-    loader: 'akamai',
-    path: '',
-  },
+  assetPrefix: 'https://sagadsalem.github.io/MyHub/',
+  images: { unoptimized: true },
   pageExtensions: ['js', 'jsx', 'mdx'],
   reactStrictMode: true,
-  experimental: {
-    scrollRestoration: true,
-  },
+  experimental: { scrollRestoration: true },
 }
 
 const withMDX = nextMDX({
