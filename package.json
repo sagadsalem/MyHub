@@ -10,7 +10,6 @@
   },
   "browserslist": "defaults, not ie <= 11",
   "dependencies": {
-    "node" :"20.x",
     "@headlessui/react": "^1.7.13",
     "@mapbox/rehype-prism": "^0.8.0",
     "@mdx-js/loader": "^2.1.5",
@@ -24,10 +23,12 @@
     "focus-visible": "^5.2.0",
     "next": "13.4.2",
     "next-router-mock": "^0.9.3",
+    "node": "20.x",
     "postcss-focus-visible": "^6.0.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "remark-gfm": "^3.0.1",
+    "sharp": "^0.32.4",
     "tailwindcss": "^3.3.0"
   },
   "devDependencies": {
