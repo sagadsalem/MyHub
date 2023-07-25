@@ -12,14 +12,6 @@ const nextConfig = {
 }
 
 const withMDX = nextMDX({
-  webpack: (config, { isServer }) => {
-    if (!isServer) {
-      config.node = {
-        fs: 'empty',
-      }
-    }
-    return config
-  },
   extension: /\.mdx?$/,
   options: {
     remarkPlugins: [remarkGfm],
