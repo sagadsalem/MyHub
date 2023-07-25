@@ -3,6 +3,7 @@ import nextMDX from '@next/mdx'
 import remarkGfm from 'remark-gfm'
 
 const debug = process.env.NODE_ENV !== 'production'
+console.log('debug', debug)
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
