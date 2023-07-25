@@ -212,7 +212,7 @@ export default function Home({ articles }) {
         </title>
         <meta
           name="description"
-          content="I’m Sajad, a software developer based in Baghdad. I’m a father to two beautiful girls and a big fan of the Man Utd football club, Enthusiastic about Laravel, Vue, and Go 🎉."
+          content="I'm Sajad, a software developer based in Baghdad. I'm a father to two beautiful girls and a big fan of the Man Utd football club, Enthusiastic about Laravel, Vue, and Go 🎉."
         />
       </Head>
       <Container className="mt-9">
@@ -221,7 +221,7 @@ export default function Home({ articles }) {
               Software Artisan, Doting Father, Man Utd Fan
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-          I’m Sajad, a software developer based in Baghdad City. I’m a father to two beautiful girls and a big fan of the Man Utd football club, Enthusiastic about Laravel, Vue, and Go 🎉.
+          I'm Sajad, a software developer based in Baghdad City. I'm a father to two beautiful girls and a big fan of the Man Utd football club, Enthusiastic about Laravel, Vue, and Go 🎉.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink

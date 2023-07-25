@@ -74,7 +74,7 @@ export default function Projects() {
       </Head>
       <SimpleLayout
         title="I've worked on things that aim to leave a dent in the grand tapestry of existence"
-        intro="I’ve worked on tons of little projects over the years but these are the ones that I’m most proud of. Many of them I cannot share because they are projects running on the internal network."
+        intro="I've worked on tons of little projects over the years but these are the ones that I'm most proud of. Many of them I cannot share because they are projects running on the internal network."
       >
         <ul
           role="list"
