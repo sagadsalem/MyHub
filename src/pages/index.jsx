@@ -24,7 +24,6 @@ import image3 from '@/images/photos/photo-3.jpg'
 import image4 from '@/images/photos/photo-4.jpg'
 import image5 from '@/images/photos/photo-5.jpg'
 import { formatDate } from '@/lib/formatDate'
-import { generateRssFeed } from '@/lib/generateRssFeed'
 import { getAllArticles } from '@/lib/getAllArticles'
 
 function BriefcaseIcon(props) {
@@ -265,10 +264,6 @@ export default function Home({ articles }) {
 }
 
 export async function getStaticProps() {
-  if (process.env.NODE_ENV === 'production') {
-    await generateRssFeed()
-  }
-
   return {
     props: {
       articles: (await getAllArticles())

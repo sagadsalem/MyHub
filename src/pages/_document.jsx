@@ -40,16 +40,7 @@ export default function Document() {
     <Html className="h-full antialiased" lang="en">
       <Head>
         <script dangerouslySetInnerHTML={{ __html: modeScript }} />
-        <link
-          rel="alternate"
-          type="application/rss+xml"
-          href={`${process.env.NEXT_PUBLIC_SITE_URL}/rss/feed.xml`}
-        />
-        <link
-          rel="alternate"
-          type="application/feed+json"
-          href={`${process.env.NEXT_PUBLIC_SITE_URL}/rss/feed.json`}
-        />
+        <link rel='icon' href='./favicon.ico?'/>
       </Head>
       <body className="flex h-full bg-zinc-50 dark:bg-black [&>#\_\_next]:flex [&>#\_\_next]:w-full">
         <Main />
