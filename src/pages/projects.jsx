@@ -10,6 +10,7 @@ import soundBoxLogo from '@/images/projects/soundbox.jpeg'
 import aqsatiLogo from '@/images/projects/aqsati.jpeg'
 import fodfilxLogo from '@/images/projects/fodflix.jpeg'
 import postgraduateLogo from '@/images/projects/postgraduate.jpeg'
+import asdpsLogo from '@/images/projects/asdps.jpeg'
 
 const projects = [
   {
@@ -48,6 +49,12 @@ const projects = [
     description: 'A service to applying for postgraduate studies at UOT.',
     link: { href: 'https://gradapply.uotechnology.edu.iq', label: 'gradapply.uotechnology.edu.iq' },
     logo: postgraduateLogo,
+  },
+  {
+    name: 'ASDPS',
+    description: 'academic skills development for postgraduate students.',
+    link: { href: 'https://asdps.rdd.edu.iq', label: 'asdps.rdd.edu.iq' },
+    logo: asdpsLogo,
   },
 ]
 
