@@ -191,9 +191,9 @@ function Photos() {
           >
             <Image
               src={image}
-              alt=""
+              alt={imageIndex}
               sizes="(min-width: 640px) 18rem, 11rem"
-              className="absolute inset-0 h-full w-full object-cover"
+              className={"absolute inset-0 h-full w-full object-cover " + (imageIndex == 4 ||  imageIndex == 2 ? ' object-right' : (imageIndex == 0 ? ' object-center' : ' object-left'))}
             />
           </div>
         ))}
