@@ -11,6 +11,8 @@ import aqsatiLogo from '@/images/projects/aqsati.jpeg'
 import fodfilxLogo from '@/images/projects/fodflix.jpeg'
 import postgraduateLogo from '@/images/projects/postgraduate.jpeg'
 import asdpsLogo from '@/images/projects/asdps.jpeg'
+import lumiarLogo from '@/images/projects/lumiar.jpeg'
+import rasanaLogo from '@/images/projects/rasana.jpeg'
 
 const projects = [
   {
@@ -56,6 +58,18 @@ const projects = [
     link: { href: 'https://asdps.rdd.edu.iq', label: 'asdps.rdd.edu.iq' },
     logo: asdpsLogo,
   },
+  {
+    name: 'Lumiar',
+    description: 'an website for applying to the Lumiar school in Iraq.',
+    link: { href: 'https://lumiar.iq', label: 'lumiar.iq' },
+    logo: lumiarLogo,
+  },
+  {
+    name: 'Rasana',
+    description: 'An exam for students (non-employees) who hold graduate degrees',
+    link: { href: 'https://rasana.scrdiraq.gov.iq', label: 'rasana.scrdiraq.gov.iq' },
+    logo: rasanaLogo,
+  },
 ]
 
 function LinkIcon(props) {
@@ -98,7 +112,7 @@ export default function Projects() {
                 />
               </div>
               <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
-                <Card.Link href={project.link.href}>{project.name}</Card.Link>
+                <Card.Link target="_blank" href={project.link.href}>{project.name}</Card.Link>
               </h2>
               <Card.Description>{project.description}</Card.Description>
               <p className="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-teal-500 dark:text-zinc-200">
